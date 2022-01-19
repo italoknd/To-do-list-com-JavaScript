@@ -1,0 +1,130 @@
+:root{
+  --cor1: #8256DB;
+  --cor2: #6341A8;
+  --cor3: #36245C;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, var(--cor1), var(--cor2), var(--cor3));
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#tasks-container{
+  width: 500px;
+  margin: auto;
+}
+
+#tasks-header{
+  margin-top: 40px;
+}
+
+#add-task-form{
+  position: relative;
+}
+
+#add-task-form input{
+  box-sizing: border-box;
+  border: 1px solid var(--cor3);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background: white;
+  color: var(--cor2);
+  padding: 15px;
+  font-size: 18px;
+  width: 100%;
+  outline: none;
+}
+
+#add-task-form input::placeholder{
+  color: var(--cor2);
+}
+
+#add-button{
+  position: absolute;
+  background: white;
+  color: var(--cor3);
+  padding: 16.5px;
+  border: 1px solid var(--cor3);
+  cursor: pointer;
+  transition: .5s;
+  width: 60px;
+  height: 53px;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#add-button:hover{
+  background: var(--cor3);
+  color: white;
+}
+
+ion-icon{
+  font-size: 25px;
+  vertical-align: center;
+}
+
+/*task container*/
+#task-list{
+  list-style: none;
+  padding-left: 0;
+}
+
+#task-list li{
+  box-sizing: border-box;
+  text-align: left;
+  height: 54px;
+  line-height: 23px;
+  position: relative;
+  background: white;
+  color: var(--cor2);
+  border-bottom: 3px solid var(--cor3);
+  padding: 15px;
+  padding-left: 15px;
+  transition: .5s;
+  font-weight: bold;
+}
+
+#task-list ion-icon{
+  position: absolute;
+  top: 0;
+  height: 40px;
+  cursor: pointer;
+  width: 34px;
+  padding: 5.3px 3px;
+  transition: .5s;
+}
+
+.done-button{
+  right: 40px;
+}
+
+.remove-button{
+  right: 0px;
+}
+
+.done-button:hover{
+  background: #07E05E;
+  color: white;
+}
+
+.remove-button:hover{
+  background: #E12001;
+  color: white;
+}
+
+.hide{
+  display: none;
+}
+
+#task-list li.done{
+  background: var(--cor3);
+  color: white;
+  text-decoration: line-through;
+}
