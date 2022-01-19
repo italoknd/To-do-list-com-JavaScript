@@ -14,11 +14,6 @@ body{
   padding-top: 30px;
 }
 
-#task-title,
-#task-list{
-  margin: 0 5px;
-}
-
 #tasks-container{
   max-width: 500px;
   min-width: 375px;
