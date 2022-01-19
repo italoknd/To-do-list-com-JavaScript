@@ -15,7 +15,7 @@ body{
 }
 
 #tasks-container{
-  width: 500px;
+  width: 450px;
   margin: auto;
 }
 
@@ -79,16 +79,18 @@ ion-icon{
 #task-list li{
   box-sizing: border-box;
   text-align: left;
+  padding: 15px;
+  padding-left: 15px;
+  margin-bottom: 10px;
   height: 54px;
   line-height: 23px;
   position: relative;
   background: white;
   color: var(--cor2);
   border-bottom: 3px solid var(--cor3);
-  padding: 15px;
-  padding-left: 15px;
-  transition: .5s;
+  border-right: 3px solid var(--cor3);
   font-weight: bold;
+  transition: .5s;
 }
 
 #task-list ion-icon{
